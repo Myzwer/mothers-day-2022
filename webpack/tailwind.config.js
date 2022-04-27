@@ -24,26 +24,11 @@ module.exports = {
       },
       transparent: "transparent",
       current: "currentColor",
-      /* How to Add custom Colors
-       * Give your color a name, make it something that makes sense.
-       * If you aren't going to use the colors below, delete them.
-       *
-       * Default is the normal base color.
-       * Light / Dark are variants within the same palette
-       * Classes are named text-CLASSNAME
-       *
-       * https://tailwindcss.com/docs/customizing-colors#custom-colors
-       * */
-      blue: {
-        light: "#6495ED", // text-blue-light
-        DEFAULT: "#0047AB", // text-blue
-        dark: "#00008B", // text-blue-dark
-        100: "#ff0000", // text-blue-100
+      orange: {
+        DEFAULT: "#B57A55",
       },
-      pink: {
-        light: "#ff7ce5",
-        DEFAULT: "#ff49db",
-        dark: "#ff16d1",
+      tan: {
+        DEFAULT: "#E2DAC7",
       },
       gray: {
         darkest: "#1f2d3d",
@@ -53,10 +38,10 @@ module.exports = {
         lightest: "#f9fafc",
       },
       white: {
-        DEFAULT: "#ffffff",
+        DEFAULT: "#eeeeee",
       },
       black: {
-        DEFAULT: "#000000",
+        DEFAULT: "#222222",
       },
     },
   },
