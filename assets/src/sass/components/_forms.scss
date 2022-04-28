@@ -1,0 +1,46 @@
+// Not my class names, sooo....
+/* stylelint-disable selector-max-id, selector-max-compound-selectors, selector-class-pattern */
+
+.gform_title,
+.gform_description {
+  display: none;
+}
+
+.gform_body input {
+  background-color: #eeeeee;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #333333;
+}
+
+.gform_body textarea {
+  background-color: #eeeeee;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #333333;
+}
+
+.gform_body input:focus {
+  border: 1px solid #333333;
+  outline: none !important;
+}
+
+.gfield_required {
+  color: #ca453d;
+}
+
+.gform_body input::placeholder {
+  color: #fdfbef;
+  opacity: 0.5;
+}
+
+.gform_button {
+  background-color: #db8644 !important;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #eeeeee;
+  padding: 5px 30px;
+  text-transform: uppercase;
+}
+
+/* stylelint-enable selector-max-id, selector-max-compound-selectors, selector-class-pattern */
