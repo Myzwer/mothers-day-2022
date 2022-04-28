@@ -80,3 +80,14 @@
     width: 100%;
   }
 }
+
+//content middle ONLY on tablet and higher
+@media screen and (max-width: 1280px) {
+  .content-middle-small-only {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
