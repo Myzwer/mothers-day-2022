@@ -97,10 +97,12 @@ get_header(); ?>
           rgba(226, 218, 199, 0.90)
         ), url('http://mothers-day-2022.local/wp-content/uploads/2022/04/Mothers-Day-Background.jpg') left center; background-repeat: no-repeat; background-size: cover;
         ">
-        <div class="grid grid-cols-12 gap-4">
-            <div class="col-span-12 p-5 my-20 text-black">
-                <h2 class="uppercase text-4xl md:text-6xl font-black"><?php the_field('photo_booth_title'); ?></h2>
-                <p class="text-lg"><?php the_field('photo_booth_description'); ?></p>
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 p-5 my-20 text-black">
+                    <h2 class="uppercase text-4xl md:text-6xl font-black"><?php the_field('photo_booth_title'); ?></h2>
+                    <p class="text-lg"><?php the_field('photo_booth_description'); ?></p>
+                </div>
             </div>
         </div>
     </div>
