@@ -38,8 +38,11 @@
 <!--Start Navbar, and by that I mean the single logo -->
 <div class="relative">
     <a href="/frontpage">
-    <img class = "absolute w-20 inset-3" src="http://mothers-day-2022.local/wp-content/uploads/2022/04/FC_circle_white.png"
-         alt="Foothills Logo">
+        <div class="absolute w-20 inset-3">
+            <img class="relative z-10"
+                 src="https://fcmothersday.com/wp-content/uploads/2022/04/FC_circle_white.png"
+                 alt="Foothills Logo">
+        </div>
     </a>
 </div>
 <!--Start Body-->
