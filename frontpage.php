@@ -39,7 +39,7 @@ get_header(); ?>
                         <?php while (have_rows('cta_button_2')): the_row(); ?>
                             <div class="inline">
                                 <a href="<?php the_sub_field('button_link'); ?>">
-                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md md:my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                                         <?php the_sub_field('button_text'); ?>
                                     </button>
                                 </a>
