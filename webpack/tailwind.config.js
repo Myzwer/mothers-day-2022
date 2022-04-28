@@ -25,6 +25,7 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
       orange: {
+        light: "#DB8644",
         DEFAULT: "#B57A55",
       },
       tan: {
