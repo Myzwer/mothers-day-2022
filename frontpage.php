@@ -15,9 +15,9 @@ get_header(); ?>
 
 
     <div class="bg-no-repeat bg-scroll bg-cover relative background-size" style="background: linear-gradient(to left,
-  rgba(181, 122, 85, 0.90),
-  rgba(181, 122, 85, 0.4)
-), url('http://mothers-day-2022.local/wp-content/uploads/2022/04/Mothers-Day-Header-Cropped.jpg') left center; background-repeat: no-repeat; background-size: cover;">
+            rgba(181, 122, 85, 0.90),
+            rgba(181, 122, 85, 0.4)
+            ), url('<?php the_field('header_background'); ?>') left center; background-repeat: no-repeat; background-size: cover;">
         <div class="xl:grid xl:grid-cols-12 mx-20 ">
             <div class="xl:col-span-6">
                 <div class="content-middle-small-only text-white text-left p-5 xl:pt-72">
@@ -79,10 +79,10 @@ get_header(); ?>
 
     <!-- Show for mobile ONLY -->
     <div class="bg-no-repeat bg-scroll bg-cover relative md:hidden" style="background: linear-gradient(to left,
-          rgba(226, 218, 199, 0.40),
-          rgba(226, 218, 199, 0.40)
-        ), url('http://mothers-day-2022.local/wp-content/uploads/2022/04/Mothers-Day-Background.jpg') left center; background-repeat: no-repeat; background-size: cover;
-        ">
+            rgba(226, 218, 199, 0.40),
+            rgba(226, 218, 199, 0.40)
+            ), url('<?php the_field('flowers_background'); ?>') left center; background-repeat: no-repeat; background-size: cover;
+            ">
         <div class="grid grid-cols-12 gap-4">
             <div class="col-span-12 p-5 my-20 text-white">
                 <h2 class="uppercase text-4xl md:text-6xl font-black"><?php the_field('photo_booth_title'); ?></h2>
@@ -93,10 +93,10 @@ get_header(); ?>
 
     <!-- Show for tablet UP -->
     <div class="bg-no-repeat bg-scroll bg-cover relative hidden md:block" style="background: linear-gradient(to left,
-          rgba(226, 218, 199, 0.90),
-          rgba(226, 218, 199, 0.90)
-        ), url('http://mothers-day-2022.local/wp-content/uploads/2022/04/Mothers-Day-Background.jpg') left center; background-repeat: no-repeat; background-size: cover;
-        ">
+            rgba(226, 218, 199, 0.90),
+            rgba(226, 218, 199, 0.90)
+            ), url('<?php the_field('flowers_background'); ?>') left center; background-repeat: no-repeat; background-size: cover;
+            ">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-12 gap-4">
                 <div class="col-span-12 p-5 my-20 text-black">
