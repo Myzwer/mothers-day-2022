@@ -46,6 +46,13 @@ function load_styles() {
 add_action('wp_enqueue_scripts', 'load_styles');
 
 
+//*****************************************************
+//******************* F O N T S ***********************
+//*****************************************************
+wp_register_style( 'noto_loadin', 'https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;900' );
+wp_enqueue_style('noto_loadin');
+
+
 
 //*****************************************************
 //******************* M E N U S ***********************

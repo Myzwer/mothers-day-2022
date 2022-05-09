@@ -13,123 +13,182 @@
 
 get_header(); ?>
 
-    <video class="header-video" src="https://foothillscollective.com/wp-content/uploads/2021/04/Res-Power-Background.mp4" autoplay loop playsinline muted></video>
 
-    <div class="viewport-header">
-        <div class="head-container">
-            <div class="center add-padding">
-                <h1 class="text-white text-5xl pb-5">Header Title</h1>
-            </div>
-            <hr class="text-white pb-5">
-            <h2 class="text-white text-3xl ">Title</h2>
-            <h3 class="text-white text-2xl">Subtitle</h3>
-        </div>
-    </div>
-
-    <div class="bg-white pb-10">
-        <div class="m-4 md:m-10 lg:max-w-4xl lg:text-center lg:mx-auto pt-10">
-            <div class="grid">
-                <div class=" grid-cols-12">
-                    <div class="col-span-12">
-                        <div class="text-center md:text-left mb-1">
-                            <h1>Color Pod</h1>
-                            <p>All fields optional</p>
-                        </div>
-                        <hr>
-                    </div>
+    <div class="bg-no-repeat bg-scroll bg-cover relative background-size" style="background: linear-gradient(to left,
+            rgba(181, 122, 85, 0.90),
+            rgba(181, 122, 85, 0.4)
+            ), url('<?php the_field('header_background'); ?>') left center; background-repeat: no-repeat; background-size: cover;">
+        <div class="xl:grid xl:grid-cols-12 mx-20 ">
+            <div class="xl:col-span-6">
+                <div class="content-middle-small-only text-white text-left p-5 xl:pt-72">
+                    <h1 class="uppercase text-white text-5xl md:text-6xl font-black"><?php the_field('main_title'); ?></h1>
                 </div>
             </div>
 
-            <div class="grid grid-cols-12 gap-4 mt-6">
-                <div class="col-span-12 lg:col-span-4 card-gradient-1 rounded-xl shadow-xl">
-                    <div class="text-center p-4">
-                        <h2 class = "font-bold text-2xl">Title</h2>
-                        <h4 class = "font-semibold">Subtitle</h4>
-                        <p class = "text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam commodi consequuntur distinctio doloribus eaque, earum exercitationem, fuga iste labore magni, maxime molestiae nulla pariatur quod sapiente totam vel voluptate?</p>
-                        <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Call To Action
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-span-12 md:col-span-6 lg:col-span-4 card-gradient-2 rounded-xl shadow-xl">
-                    <div class="text-center p-4">
-                        <h2 class = "font-bold text-2xl">Title</h2>
-                        <h4 class = "font-semibold">Subtitle</h4>
-                        <p class = "text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam commodi consequuntur distinctio doloribus eaque, earum exercitationem, fuga iste labore magni, maxime molestiae nulla pariatur quod sapiente totam vel voluptate?</p>
-                        <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Call To Action
-                        </button>
-                    </div>
-                </div>
-
-                <div class="col-span-12 md:col-span-6 lg:col-span-4 card-gradient-3 rounded-xl shadow-xl">
-                    <div class="text-center p-4">
-                        <h2 class = "font-bold text-2xl">Title</h2>
-                        <h4 class = "font-semibold">Subtitle</h4>
-                        <p class = "text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam commodi consequuntur distinctio doloribus eaque, earum exercitationem, fuga iste labore magni, maxime molestiae nulla pariatur quod sapiente totam vel voluptate?</p>
-                        <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                            Call To Action
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-12 mt-20">
-                <div class="col-span-12">
-                    <div class="text-center md:text-left mb-1">
-                        <h1>PDF Download (four-up)</h1>
-                        <p>This configuration always shows four PDF's on one row.</p>
-                    </div>
-                    <hr>
-                </div>
-            </div>
-
-
-            <div class="grid grid-cols-12 mt-5 gap-6">
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="text-center mb-1">
-                        <div class="w-24 text-center m-auto my-3">
-                            <img class = "rounded-full" src="https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
-                        </div>
-                        <h2 class = "font-bold text-2xl">PDF Title</h2>
-                        <p class = "text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis cumque doloremque error esse exercitationem explicabo iure iusto magni molestiae, nulla odio quam quo repellat vero. Aliquam possimus repellendus voluptate.</p>
-                    </div>
-                </div>
-
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="text-center mb-1">
-                        <div class="w-24 text-center m-auto my-3">
-                            <img class = "rounded-full" src="https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
-                        </div>
-                        <h2 class = "font-bold text-2xl">PDF Title</h2>
-                        <p class = "text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis cumque doloremque error esse exercitationem explicabo iure iusto magni molestiae, nulla odio quam quo repellat vero. Aliquam possimus repellendus voluptate.</p>
-                    </div>
-                </div>
-
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="text-center mb-1">
-                        <div class="w-24 text-center m-auto my-3">
-                            <img class = "rounded-full" src="https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
-                        </div>
-                        <h2 class = "font-bold text-2xl">PDF Title</h2>
-                        <p class = "text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis cumque doloremque error esse exercitationem explicabo iure iusto magni molestiae, nulla odio quam quo repellat vero. Aliquam possimus repellendus voluptate.</p>
-                    </div>
-                </div>
-
-                <div class="col-span-12 md:col-span-6 lg:col-span-3">
-                    <div class="text-center mb-1">
-                        <div class="w-24 text-center m-auto my-3">
-                            <img class = "rounded-full" src="https://images.unsplash.com/photo-1508515053963-70c7cc39dfb5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="">
-                        </div>
-                        <h2 class = "font-bold text-2xl">PDF Title</h2>
-                        <p class = "text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam corporis cumque doloremque error esse exercitationem explicabo iure iusto magni molestiae, nulla odio quam quo repellat vero. Aliquam possimus repellendus voluptate.</p>
-                    </div>
-                </div>
+            <div class="hidden xl:block xl:col-span-6 bg-tan my-10 p-10 rounded-xl shadow-xl">
+                <h3 class="uppercase text-4xl font-black "><?php the_field('form_title'); ?></h3>
+                <p class="pb-5"><?php the_field('form_subtitle'); ?></p>
+                <?php if (have_posts()) : while (have_posts()) : the_post();
+                    the_content();
+                endwhile;
+                else: ?>
+                    <p>Sorry, no posts matched your criteria.</p>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 
+    <div class="bg-tan p-5 xl:hidden">
+        <div class="grid grid-cols-12">
+            <div class="col-span-12 md:col-start-2 md:col-span-7">
+                <h3 class="uppercase text-2xl font-black "><?php the_field('form_title'); ?></h3>
+                <p class="pb-5"><?php the_field('form_subtitle'); ?></p>
+                <?php if (have_posts()) : while (have_posts()) : the_post();
+                    the_content();
+                endwhile;
+                else: ?>
+                    <p>Sorry, no posts matched your criteria.</p>
+                <?php endif; ?>
+            </div>
+        </div>
+    </div>
+
+    <!-- Show for mobile ONLY -->
+    <div class="bg-no-repeat bg-scroll bg-cover relative md:hidden" style="background: linear-gradient(to left,
+            rgba(226, 218, 199, 0.40),
+            rgba(226, 218, 199, 0.40)
+            ), url('<?php the_field('flowers_background'); ?>') left center; background-repeat: no-repeat; background-size: cover;
+            ">
+        <div class="grid grid-cols-12 gap-4">
+            <div class="col-span-12 p-5 my-20 text-white">
+                <h2 class="uppercase text-4xl md:text-6xl font-black"><?php the_field('photo_booth_title'); ?></h2>
+                <p class="text-lg"><?php the_field('photo_booth_description'); ?></p>
+
+                <?php if (have_rows('service_1')): ?>
+                    <?php while (have_rows('service_1')): the_row(); ?>
+                        <div class="inline mr-5">
+                            <?php if (get_sub_field('button_link')): ?>
+                                <a href="<?php the_sub_field('button_link'); ?>">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                        <?php the_sub_field('button_text'); ?>
+                                    </button>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if (have_rows('service_2')): ?>
+                    <?php while (have_rows('service_2')): the_row(); ?>
+                        <div class="inline mr-5">
+                            <?php if (get_sub_field('button_link')): ?>
+                                <a href="<?php the_sub_field('button_link'); ?>">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                        <?php the_sub_field('button_text'); ?>
+                                    </button>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if (have_rows('service_3')): ?>
+                    <?php while (have_rows('service_3')): the_row(); ?>
+                        <div class="inline mr-5">
+                            <?php if (get_sub_field('button_link')): ?>
+                                <a href="<?php the_sub_field('button_link'); ?>">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                        <?php the_sub_field('button_text'); ?>
+                                    </button>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if (have_rows('service_4')): ?>
+                    <?php while (have_rows('service_4')): the_row(); ?>
+                        <div class="inline mr-5">
+                            <?php if (get_sub_field('button_link')): ?>
+                                <a href="<?php the_sub_field('button_link'); ?>">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                        <?php the_sub_field('button_text'); ?>
+                                    </button>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Show for tablet UP -->
+    <div class="bg-no-repeat bg-scroll bg-cover relative hidden md:block" style="background: linear-gradient(to left,
+            rgba(226, 218, 199, 0.90),
+            rgba(226, 218, 199, 0.90)
+            ), url('<?php the_field('flowers_background'); ?>') left center; background-repeat: no-repeat; background-size: cover;
+            ">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 p-5 my-20 text-black">
+                    <h2 class="uppercase text-4xl md:text-6xl font-black"><?php the_field('photo_booth_title'); ?></h2>
+                    <p class="text-lg"><?php the_field('photo_booth_description'); ?></p>
+                    <?php if (have_rows('service_1')): ?>
+                        <?php while (have_rows('service_1')): the_row(); ?>
+                            <div class="inline mr-5">
+                                <?php if (get_sub_field('button_link')): ?>
+                                    <a href="<?php the_sub_field('button_link'); ?>">
+                                        <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                            <?php the_sub_field('button_text'); ?>
+                                        </button>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php if (have_rows('service_2')): ?>
+                        <?php while (have_rows('service_2')): the_row(); ?>
+                            <div class="inline mr-5">
+                                <?php if (get_sub_field('button_link')): ?>
+                                    <a href="<?php the_sub_field('button_link'); ?>">
+                                        <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                            <?php the_sub_field('button_text'); ?>
+                                        </button>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php if (have_rows('service_3')): ?>
+                        <?php while (have_rows('service_3')): the_row(); ?>
+                            <div class="inline mr-5">
+                                <?php if (get_sub_field('button_link')): ?>
+                                    <a href="<?php the_sub_field('button_link'); ?>">
+                                        <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                            <?php the_sub_field('button_text'); ?>
+                                        </button>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php if (have_rows('service_3')): ?>
+                        <?php while (have_rows('service_4')): the_row(); ?>
+                            <div class="inline mr-5">
+                                <?php if (get_sub_field('button_link')): ?>
+                                    <a href="<?php the_sub_field('button_link'); ?>">
+                                        <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                            <?php the_sub_field('button_text'); ?>
+                                        </button>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 <?php
 get_footer();

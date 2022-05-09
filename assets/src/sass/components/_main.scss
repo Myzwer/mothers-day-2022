@@ -1,6 +1,13 @@
 body {
-  font-family: "gotham", sans-serif !important;
-  ::placeholder {
-    color: #808080;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.background-size {
+  height: 80vh;
+}
+
+@media screen and (min-width: 1280px) {
+  .background-size {
+    height: auto;
   }
 }

@@ -35,35 +35,16 @@
 <?php wp_body_open(); ?>
 
 
-<!--Start Navbar-->
-<section class="navigation">
-    <div class="nav-container">
-        <div class="brand">
-            <a href="/frontpage">
-                <!--Company Logo / Branding. Template supports both Text and Logo-->
-                <img src="https://images.squarespace-cdn.com/content/v1/575a6067b654f9b902f452f4/1552683653140-0UUVQSSUEWVC73AWAEQG/300Logo.png"
-                     alt="Company Logo">
-            </a>
+<!--Start Navbar, and by that I mean the single logo -->
+<div class="relative">
+    <a href="/frontpage">
+        <div class="absolute w-20 inset-3">
+            <img class="relative z-10"
+                 src="https://fcmothersday.com/wp-content/uploads/2022/04/FC_circle_white.png"
+                 alt="Foothills Logo">
         </div>
-
-        <nav>
-            <div class="nav-mobile">
-                <a id="nav-toggle" href="#!"><span></span></a>
-            </div>
-
-            <!-- Start Wordpress-->
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'header-menu',
-                'menu_class'     => 'primary-menu', // pass whatever classes to be added to top level here
-                'walker' => new PreLaunch_Walker(),
-                'items_wrap' => '<ul class="nav-list">%3$s</ul>'
-            ));
-            ?>
-            <!-- End Wordress -->
-        </nav>
-    </div>
-</section>
+    </a>
+</div>
 <!--Start Body-->
 
 
