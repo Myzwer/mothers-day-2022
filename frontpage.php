@@ -22,30 +22,6 @@ get_header(); ?>
             <div class="xl:col-span-6">
                 <div class="content-middle-small-only text-white text-left p-5 xl:pt-72">
                     <h1 class="uppercase text-white text-5xl md:text-6xl font-black"><?php the_field('main_title'); ?></h1>
-
-
-                    <?php if (have_rows('cta_button_1')): ?>
-                        <?php while (have_rows('cta_button_1')): the_row(); ?>
-                            <div class="inline mr-5">
-                                <a href="<?php the_sub_field('button_link'); ?>">
-                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </button>
-                                </a>
-                            </div>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
-                    <?php if (have_rows('cta_button_2')): ?>
-                        <?php while (have_rows('cta_button_2')): the_row(); ?>
-                            <div class="inline">
-                                <a href="<?php the_sub_field('button_link'); ?>">
-                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md md:my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                                        <?php the_sub_field('button_text'); ?>
-                                    </button>
-                                </a>
-                            </div>
-                        <?php endwhile; ?>
-                    <?php endif; ?>
                 </div>
             </div>
 
@@ -87,6 +63,60 @@ get_header(); ?>
             <div class="col-span-12 p-5 my-20 text-white">
                 <h2 class="uppercase text-4xl md:text-6xl font-black"><?php the_field('photo_booth_title'); ?></h2>
                 <p class="text-lg"><?php the_field('photo_booth_description'); ?></p>
+
+                <?php if (have_rows('service_1')): ?>
+                    <?php while (have_rows('service_1')): the_row(); ?>
+                        <div class="inline mr-5">
+                            <?php if (get_sub_field('button_link')): ?>
+                                <a href="<?php the_sub_field('button_link'); ?>">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                        <?php the_sub_field('button_text'); ?>
+                                    </button>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if (have_rows('service_2')): ?>
+                    <?php while (have_rows('service_2')): the_row(); ?>
+                        <div class="inline mr-5">
+                            <?php if (get_sub_field('button_link')): ?>
+                                <a href="<?php the_sub_field('button_link'); ?>">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                        <?php the_sub_field('button_text'); ?>
+                                    </button>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if (have_rows('service_3')): ?>
+                    <?php while (have_rows('service_3')): the_row(); ?>
+                        <div class="inline mr-5">
+                            <?php if (get_sub_field('button_link')): ?>
+                                <a href="<?php the_sub_field('button_link'); ?>">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                        <?php the_sub_field('button_text'); ?>
+                                    </button>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+                <?php if (have_rows('service_4')): ?>
+                    <?php while (have_rows('service_4')): the_row(); ?>
+                        <div class="inline mr-5">
+                            <?php if (get_sub_field('button_link')): ?>
+                                <a href="<?php the_sub_field('button_link'); ?>">
+                                    <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                        <?php the_sub_field('button_text'); ?>
+                                    </button>
+                                </a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
+
             </div>
         </div>
     </div>
@@ -102,9 +132,63 @@ get_header(); ?>
                 <div class="col-span-12 p-5 my-20 text-black">
                     <h2 class="uppercase text-4xl md:text-6xl font-black"><?php the_field('photo_booth_title'); ?></h2>
                     <p class="text-lg"><?php the_field('photo_booth_description'); ?></p>
+                    <?php if (have_rows('service_1')): ?>
+                        <?php while (have_rows('service_1')): the_row(); ?>
+                            <div class="inline mr-5">
+                                <?php if (get_sub_field('button_link')): ?>
+                                    <a href="<?php the_sub_field('button_link'); ?>">
+                                        <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                            <?php the_sub_field('button_text'); ?>
+                                        </button>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php if (have_rows('service_2')): ?>
+                        <?php while (have_rows('service_2')): the_row(); ?>
+                            <div class="inline mr-5">
+                                <?php if (get_sub_field('button_link')): ?>
+                                    <a href="<?php the_sub_field('button_link'); ?>">
+                                        <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                            <?php the_sub_field('button_text'); ?>
+                                        </button>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php if (have_rows('service_3')): ?>
+                        <?php while (have_rows('service_3')): the_row(); ?>
+                            <div class="inline mr-5">
+                                <?php if (get_sub_field('button_link')): ?>
+                                    <a href="<?php the_sub_field('button_link'); ?>">
+                                        <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                            <?php the_sub_field('button_text'); ?>
+                                        </button>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                    <?php if (have_rows('service_3')): ?>
+                        <?php while (have_rows('service_4')): the_row(); ?>
+                            <div class="inline mr-5">
+                                <?php if (get_sub_field('button_link')): ?>
+                                    <a href="<?php the_sub_field('button_link'); ?>">
+                                        <button class="mx-auto lg:mx-0 shadow-xl uppercase bg-orange-light text-white font-black rounded-md my-6 py-2 px-5 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                                            <?php the_sub_field('button_text'); ?>
+                                        </button>
+                                    </a>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+
                 </div>
             </div>
         </div>
     </div>
+
 <?php
 get_footer();
